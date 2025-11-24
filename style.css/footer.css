@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-block: 1rem;
+    gap: 1rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+
+@media (width>=80em) {
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        font: 14px/150% var(--font-family);
+    }
+
+    footer ul {
+        display: flex;
+        list-style: none;
+        gap: 24px;
+    }
+
+
+}

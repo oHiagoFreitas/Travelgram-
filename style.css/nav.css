@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.25rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1rem;
+    padding-block: .5rem;
+}
+
+nav ul li:last-child img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+a.social {
+    --bg-img:"";
+    background-image: var(--bg-img);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    background-repeat: no-repeat;
+
+    &[aria-label="Glass"] {
+        --bg-img: url(../assets/icons/MagnifyingGlass.svg);
+
+        &:hover {
+            --bg-img: url(../assets/icons/Glasshover.svg);
+        }
+    }
+}
